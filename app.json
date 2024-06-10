@@ -3,6 +3,7 @@
     "name": "my-app",
     "slug": "my-app",
     "version": "1.0.0",
+    "entryPoint": "./App.tsx", 
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "myapp",
@@ -13,7 +14,8 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.anonymous.my-app"
     },
     "android": {
       "adaptiveIcon": {
