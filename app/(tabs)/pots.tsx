@@ -1,9 +1,9 @@
 import { View, Text, StyleSheet } from 'react-native';
 
-export default function Home() {
+export default function Pots() {
   return (
     <View style={styles.container}>
-      <Text>Home</Text>
+      <Text>Pottery Log</Text>
     </View>
   );
 }

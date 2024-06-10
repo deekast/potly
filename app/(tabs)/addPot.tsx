@@ -1,9 +1,9 @@
 import { View, Text, StyleSheet } from 'react-native';
 
-export default function Home() {
+export default function AddPot() {
   return (
     <View style={styles.container}>
-      <Text>Home</Text>
+      <Text>Add Pot</Text>
     </View>
   );
 }
