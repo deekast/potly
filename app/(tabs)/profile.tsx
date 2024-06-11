@@ -1,9 +1,9 @@
 import { View, Text, StyleSheet } from 'react-native';
 
-export default function Settings() {
+export default function Profile() {
   return (
     <View style={styles.container}>
-      <Text> Settings </Text>
+      <Text> Profile </Text>
     </View>
   );
 }
