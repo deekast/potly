@@ -19,7 +19,7 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name="addPot"
+        name="add-pot"
         options={{
           title: 'Add pot',
           tabBarIcon: ({ color }) => <FontAwesome size={28} name="plus" color="green" />,
