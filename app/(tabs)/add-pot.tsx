@@ -1,8 +1,10 @@
+
 import React, { useState } from 'react';
 import { View, Text, TextInput, Button, StyleSheet } from 'react-native';
 import { useRouter } from 'expo-router';
 import globalStyles from '../styles/global';
 import ModalSelector from 'react-native-modal-selector';
+
 
 const AddPot = () => {
   const [title, setTitle] = useState('');
@@ -16,14 +18,26 @@ const AddPot = () => {
   const [weight, setWeight] = useState('');
   const router = useRouter();
 
+
+  interface Pot {
+    id: string;
+    title: string;
+    description: string;
+    stage: string;
+    method: string;
+    vessel: string;
+    weight: string;
+  }
+  
+
   const handleAddPot = () => {
     console.log('New Pot:', { title, stage, method, vessel, weight, description });
-    // Add logic to save the new pot
 
-    // Navigate to Pots tab after adding the pot
+    // // Navigate to Pots tab after adding the pot
     router.push('/(tabs)/pots');
   };
 
+  // Set Modular picker for stages, methods, vessels 
   const stages = [
     { key: 'stage1', label: 'Idea' },
     { key: 'stage2', label: 'Thrown / Formed' },
